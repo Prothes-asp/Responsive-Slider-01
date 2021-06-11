@@ -1,0 +1,51 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.slider-main{
+	width:100%;
+	height:250px;
+	overflow:hidden;
+}
+.navigation{
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	/*Ai Code USe kora hoice bar take show koranor jonno but ai code tuku lagbe na*/
+  /*height:10px;
+	width:10px;
+    background-color:red;
+  */
+}
+.bar{
+	height:10px;
+	width:50px;
+	border:solid 3px #fff;
+	border-radius:10px;
+	margin:6px;
+	cursor:pointer;
+}
+input[name="asp"]{
+	position: absolute;
+	visibility: hidden;
+}
+.slides-sub{
+	height:100%;
+	width:500%;
+	display: flex;
+}
+.slide{
+	width:20%;
+	transition:0.6s;
+}
+.slide img{
+	width:100%;
+	height:250px;
+}
+#asp1:checked~.s1{margin-left:-0%;}
+#asp2:checked~.s1{margin-left:-20%;}
+#asp3:checked~.s1{margin-left:-40%;}
+#asp4:checked~.s1{margin-left:-60%;}
+#asp5:checked~.s1{margin-left:-8s0%;}
